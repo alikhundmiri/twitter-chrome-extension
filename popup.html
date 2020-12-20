@@ -17,15 +17,27 @@
 			}
 		</style>
 		<script src="popup.js"></script>
-		<!-- <link rel="stylesheet" href="src/bootstrap/dist/css/bootstrap.min.css"/> -->
+		<link rel="stylesheet" href="src/bootstrap/dist/css/bootstrap.min.css"/>
 	</head>
-	<body>
-
-		<h2>Tweet Distraction Free</h2>
-		<br>
-		<form class="form-inline">
-			<textarea class="form-control" rows="3"></textarea>
-			<button>Tweet</button>
-		</form>
+	<body style="background-color: #1DA1F2">
+		<div class="row">
+			<div class="col">
+				<p class="float-right">0/12 Tweets/day</p>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<!-- <h2>Tweet Distraction Free</h2> -->
+				<form class="form-inline"  id="tweet-form">
+					<p style="font-weight: 800">Tweet Distraction Free</p>
+					<textarea id='tweet_status' style="padding: 10px; margin-bottom: 5px" class="form-control" rows="3"></textarea>
+					<input id='send_tweet_button' class="btn btn-primary" type="button" value="Tweet as @AliCoderMaker">
+				</form>
+			</div>
+		</div>
 	</body>
+	<script src="credentials.js"></script>
+	<script src="popup.js"></script>
+
 	</html>
